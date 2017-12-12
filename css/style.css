@@ -36,21 +36,23 @@ display: none;
 }
 
 span{
+  position: relative;
+  z-index: 20;
   display: block;
   width: 40px;
   height: 5px;
   margin-bottom: 5px;
   background: #414042;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
+
+
 .navbar-on span:nth-child(1) {
-  transform-origin: 10% 40%;
-  transform: rotate(45deg);
+  transform: translateY(10px) rotate(405deg);
 }
 
 .navbar-on span:nth-child(3) {
-transform-origin: 18% 40%;
-transform: rotate(-45deg);
+  transform: translateY(-10px) rotate(-405deg);
 }
 
 .navbar-on span:nth-child(2) { background-color: transparent; }
@@ -133,8 +135,33 @@ color:#414042;
         .hamburger{
           display: block;
         }
-        nav{
-          display: none;
+        .nav-hide { display: none; }
+
+        nav {
+          position: fixed;
+          z-index: 10;
+          background: rgba(255,255,255,255);
+          width: 100%;
+          height: 100%;
+          text-align: center;
+          color: white;
           animation:none;
         }
+
+      ul{
+        transform: translate(-50%, -50%);
+        width:100%;
+top:40%;
+left:45%;
+position:absolute;
+
+      }
+        li {
+          display: block;
+          padding: 50px 0;
+          font-size: 20px;
+          margin-left: 0;
+        }
+      
+
       }
