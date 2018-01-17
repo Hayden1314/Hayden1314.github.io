@@ -1,0 +1,597 @@
+body{
+  height: 100%;
+  width:100%;
+  margin:0;
+  font-family: 'Raleway', sans-serif;
+}
+
+
+.borderTop{
+  border-top: solid;
+  border-color: #414042;
+  border-width: 15px;
+  position: fixed;
+   z-index: 990;
+   top: 0;
+     left: 0;
+     width:100%;
+}
+
+nav{
+list-style: none;
+font-size: 15px;
+position:fixed;
+background-color: #fff;
+width:100%;
+z-index: 99;
+}
+ul{
+padding:3% 0;
+padding-top: 5%;
+margin:0;}
+.logo{
+  width:4%;
+  float:right;
+  margin-right:5%;
+   transition: all 0.5s;
+}
+
+.fadein{
+    animation: fadein 1s;
+}
+
+@keyframes fadein {
+from { opacity: 0; }
+to   { opacity: 1; }
+}
+
+
+li {
+  display: inline;
+  margin-left: 5%;
+}
+.link{
+  color:#414042;
+  text-decoration: none;
+  display: inline-block;
+    color: #000;
+    text-decoration: none;
+}
+.link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #728E79;
+    transition: width .3s;
+}
+
+.link:hover::after {
+    width: 100%;
+    //transition: width .3s;
+}
+
+
+.hamburger{
+
+display: none;
+
+}
+
+span{
+  position: relative;
+  z-index: 20;
+  display: block;
+  width: 40px;
+  height: 5px;
+  margin-bottom: 5px;
+  background: #414042;
+  transition: all 0.4s ease-in-out;
+}
+
+
+.navbar-on span:nth-child(1) {
+  transform: translateY(10px) rotate(405deg);
+}
+
+.navbar-on span:nth-child(3) {
+  transform: translateY(-10px) rotate(-405deg);
+}
+
+.navbar-on span:nth-child(2) { background-color: transparent; }
+
+
+      .logoAnimate{
+        text-align: center;
+      }
+
+      @keyframes Jump2 {
+      10% { transform: translateY(1px) ;  }
+      }
+      .rectShapes{
+        animation: rectJump 0.5s ease-out;
+        animation-delay: 3.2s;
+        }
+
+      svg{
+        margin:0 auto;
+          width:250px;
+          height:100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          animation: Flip 0.5s ease-out;
+        animation-delay: 2.7s;
+
+      }
+      .text{
+        animation: Jump 0.5s ease-out;
+        animation-delay: 3.2s;
+        opacity: 0;
+        animation-fill-mode:forwards;
+
+}
+.container{
+  height:100%;
+  width:100%;
+  margin: 0;
+  color:#414042;
+
+}
+
+.content{
+padding-top: 15%;
+}
+.container p{
+  font-size: 15px;
+
+}
+.row{
+  margin:0 auto;
+  width:60%;
+  overflow: hidden;
+}
+.skillsRow{
+  width:100%;
+  margin:0 auto ;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+.col1{
+  width:30%;
+float:left;
+text-align: center;
+}
+.col2{
+  width:55%;
+  margin-left: 7.5%;
+  float:left;
+    margin-bottom: 15%;
+}
+.about h1{ line-height: 0.9;}
+h1{
+  margin:0;
+  font-weight:normal;
+  color:#414042;
+}
+h2{
+margin:0;
+  font-weight:normal;
+}
+.cv{
+  margin-top: 5%;
+  color:#728E79;
+  text-decoration: none;
+}
+
+
+.skills{
+width:25%;
+text-align: center;
+display: inline-block;
+vertical-align: top;
+}
+.marginCenter{
+  margin:0 9%;
+}
+
+.skills img{
+  width:100%;
+
+}
+
+
+.aboutIcons{
+  width:19%;
+  margin:0 1.7%;
+margin-top:10%;
+transition: all 0.3s ease-in-out;
+cursor: pointer;
+}
+.aboutIcons:hover{
+  transform: scale(1.2);
+}
+
+u{
+  text-decoration: none;
+  border-bottom:2px solid #728E79;
+}
+
+.profilePic{
+  width: 100%;
+  float:right;
+}
+
+.contactMe {
+  height:100%;
+width:100%;  margin:0 auto;
+  padding-top: 20%;
+  overflow: hidden;
+  display: flex;
+      align-items: center;
+}
+.contactCol1{
+padding:3% 0;
+  width:50%;
+  text-align: right;
+  border-right: 2px solid #728E79;
+  float:left;
+
+}
+.contactCol1 h1{
+  font-size: 60px;
+  font-weight:500;
+
+}
+.contactP{
+  width:50%;
+  float:right;
+}
+.contactText{
+    margin-right:5%;
+}
+
+.contactCol2{
+height:100%;
+  width:40%;
+  float:left;
+
+}
+.contactIcon{
+  margin:2% 0;
+}
+.contactIcon{
+  width:10%;
+  margin-left:5%;
+  vertical-align: middle;
+}
+.contactCol2 p{
+  display:inline;
+margin-left: 2%;
+}
+
+
+
+
+
+footer{
+  padding-top: 10%;
+  width:100%;
+  clear: both;
+}
+
+.homeFooter{
+position:fixed;
+bottom:0;
+width:100%;
+padding:1% 0;
+}
+footer p{
+font-size: 12px;
+float:right;
+margin-right: 30px;
+color:#414042;
+}
+
+
+@keyframes Jump {
+10% { transform: translateY(35px) ;  }
+
+  100%{opacity: 1;}
+}
+
+@keyframes rectJump {
+10% { transform: translateY(30px) ;  }
+}
+
+      @keyframes Flip {
+      85% { transform: translateY(-50px) ;  }
+      }
+
+
+
+@media  (max-width: 575px) {
+  .row{
+    width:90%;
+  }
+  .col1{
+width:100%;
+margin:0 auto;
+  }
+
+
+  .aboutIcons{
+    width:10%;
+    display:none;
+  }
+
+  .profilePic{
+display:none;
+  }
+  .col2{width:100%;
+    text-align:center;
+  margin:0;
+  margin-bottom: 10%;
+}
+.col2 p{
+  font-size: 13px;
+}
+.col2 h1{
+  font-size: 25px;
+}
+.skills h2{
+  font-size: 20px;
+}
+.skills{
+  width:100%;
+  margin:0;
+}
+.skills p{
+  font-size: 13px;
+}
+.skills img{
+  width:50%;
+}
+
+
+.things{
+  display: none;
+}
+.content{
+  padding-top: 120px;
+  }
+  .contactMe {
+    height:100%;
+  width:100%;  margin:0 auto;
+    padding-top: 120px;
+    overflow: hidden;
+    display: block;
+  }
+  .contactCol1{
+  padding:0;
+    width:100%;
+    text-align: center;
+    border-right:none;
+  }
+  .contactP{
+    margin:0 auto;
+
+    width:80%;
+    float:none;
+  }
+    .contactCol2{
+      width:100%;
+    float:none;
+    text-align: none;
+  }
+.contactInfo{
+  width:100%;
+text-align: center;}
+.contactIcon{
+  width:20%;
+  margin-left:0;
+  vertical-align:initial;
+}
+  .contactCol1 h1{
+    font-size: 50px;
+    font-weight:500;
+  }
+.contactCol1 p{
+font-size: 13px;
+}
+.contactCol2 p{
+font-size: 15px;
+display:block;
+}
+
+
+}
+
+@media  (min-width: 576px) and  (max-width: 767px) {
+
+
+  .row{
+    width:90%;
+    margin:0 auto;
+  }
+  .col1{
+    width:30%;
+  }
+
+  .col2 p{
+    font-size: 13px;
+  }
+  .col2 h1{
+    font-size: 20px;
+  }
+  .col2{
+  width:60%;
+  }
+  .skills{
+      margin:0 3%;
+  }
+  .skills p{
+    font-size: 13px;
+  }
+  .skills h2{
+    font-size: 20px;
+  }
+  .aboutIcons{
+    width:17%;
+  }
+  .content{
+    padding-top: 120px;
+    }
+    .contactMe {
+      height:100%;
+    width:100%;  margin:0 auto;
+      padding-top: 220px;
+      overflow: hidden;
+      display: flex;
+          align-items: center;
+    }
+    .contactCol1 h1{
+      font-size: 40px;
+      font-weight:500;
+    }
+.contactCol1 p{
+  font-size: 13px;
+}
+.contactCol2 p{
+  font-size: 13px;
+
+}
+    .contactP{
+      width:60%;
+      float:right;
+    }
+    .contactIcon{
+      width:15%;
+      margin-left:5%;
+    }
+
+
+
+
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .row{
+    width:90%;
+    margin:0 auto;
+  }
+  .col1{
+    width:30%;
+  }
+
+  .col2 p{
+    font-size: 15px;
+  }
+  .col2 h1{
+      font-size: 2em;
+  }
+  .col2{
+  width:60%;
+  }
+  .skills{
+      margin:0 3%;
+  }
+  .skills p{
+    font-size: 15px;
+  }
+  .skills h2{
+    font-size: 20px;
+  }
+  .aboutIcons{
+    width:17%;
+  }
+  .content{
+    padding-top: 120px;
+    }
+    .contactMe {
+      height:100%;
+    width:100%;  margin:0 auto;
+      padding-top: 220px;
+      overflow: hidden;
+      display: flex;
+          align-items: center;
+    }
+    .contactCol1 h1{
+      font-size: 50px;
+      font-weight:500;
+    }
+    .contactP{
+      width:60%;
+      float:right;
+    }
+    .contactIcon{
+      width:15%;
+      margin-left:5%;
+      vertical-align: middle;
+    }
+
+
+ }
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+ }
+
+      @media (max-width:991px){
+        svg {
+          width:200px;
+        }
+        .hamburger{
+          display: block;
+          position:absolute;
+          top:10%;
+          left:5%;
+          cursor: pointer;
+          z-index: 10;
+        }
+        .overflow{
+          overflow: hidden;
+        }
+        .nav-hide { display: none; }
+
+        nav {
+          position: fixed;
+          z-index: 10;
+          background: rgba(255,255,255,255);
+          width: 100%;
+          height: 100%;
+          text-align: center;
+          color: white;
+          animation:none;
+          overflow-y: hidden;
+        }
+        .logo{
+          width:7%;
+          position:absolute;
+          top:-8%;
+          left:85%;
+          }
+
+      ul{
+        width:100%;
+        top:15%;
+        left:0%;
+        position:absolute;
+      }
+        li {
+          display: block;
+          padding: 50px 0;
+          font-size: 25px;
+          margin-left: 0;
+        }
+
+      }
+
+      @media (min-width:992px){
+        .nav-hide{display:block!important;}
+        .logo:hover {
+            transform: scale(1.2);
+          }
+      }
