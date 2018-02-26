@@ -1,8 +1,8 @@
 const myNav = document.querySelector("nav");
 const logoExpand = document.querySelector(".navLogo");
+
 window.onscroll = function () {
-    "use strict";
-    if (document.documentElement.scrollTop >=100 ) {
+    if (document.body.scrollTop || document.documentElement.scrollTop >=100 ) {
         myNav.classList.add("nav-colored");
         logoExpand.classList.add("logoExpand");
     }

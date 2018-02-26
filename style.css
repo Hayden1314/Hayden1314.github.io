@@ -440,6 +440,7 @@ footer{
      display: none;
      width:100%;
      order:3;
+     font-size: 15px;
    }
    .showLinks{
       display:block;
@@ -490,6 +491,14 @@ footer{
      margin-left: 30px;
      transition:all 0.2s linear;
    }
+
+   header{
+     background-attachment: scroll;
+   }
+   #aboutSection{
+     background-attachment: scroll;
+   }
+
    header h1{
      font-weight: 200;
      font-size: 30px;
