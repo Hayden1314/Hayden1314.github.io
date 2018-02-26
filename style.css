@@ -431,6 +431,9 @@ footer{
 
  }
  @media (max-width: 767px) {
+   .overlay {
+  opacity: 1;
+   }
     nav{
       flex-direction: row;
       flex-wrap: wrap;
